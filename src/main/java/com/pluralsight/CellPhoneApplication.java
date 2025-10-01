@@ -6,6 +6,7 @@ public class CellPhoneApplication {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         CellPhone phone = new CellPhone();
+        CellPhone phone2 = new CellPhone();
 
         System.out.println("What is the Phone serial number?: ");
         int sNumber = input.nextInt();
@@ -33,6 +34,9 @@ public class CellPhoneApplication {
         phone.setOwner(pOwner);
         System.out.println(phone.getOwner());
 
+     //  public static void display(){}
 
+
+        }
     }
-}
+

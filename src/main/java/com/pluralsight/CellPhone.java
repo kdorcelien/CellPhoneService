@@ -1,5 +1,8 @@
 package com.pluralsight;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class CellPhone {
     private int serialNumber;
     private String model;
@@ -53,5 +56,12 @@ public class CellPhone {
 
     public void setOwner(String owner) {
         this.owner = owner;
+    }
+
+    public void dial(String phoneNumber){
+        Scanner input2 = new Scanner(System.in);
+        System.out.println("Enter phone number: ");
+        String pNumber2 = input2.nextLine();
+        System.out.println(owner +"'s phone is calling " + pNumber2);
     }
 }
